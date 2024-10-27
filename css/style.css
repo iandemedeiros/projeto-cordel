@@ -1,26 +1,82 @@
 @charset "UTF-8";
 
-@font-face {
-    font-family: "titulo";
-    src: url(../fonts/CartoonCheck-Black.ttf) format(truetype);
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sriracha&display=swap');
+
+:root{
+    --font1: Verdana, Geneva, Tahoma, sans-serif;
+    --font2: "Passion One", sans-serif;
+    --font3: "Sriracha", cursive;
 }
-body{
+*{
     margin: 0;
+    padding: 0;
+}
+html,body{
+    min-height: 100vh;
+    background-color: darkgray;
+    font-family: var(--font1);
 }
 header{
     background-color: black;
-    min-height: 150px;
+    color: white;
+    text-align: center;
 }
 header h1{
-    font-family: "titulo";
-    color: white;
-    margin: 0 10px;
-}
-header p{
-    color: rgba(255, 255, 255, 0.699);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-top: 40px;
+    font-family: var(--font2);
+    font-size: 8vw;
 }
 .marcador{
     text-decoration: none;
     color: white;
+}
+.marcador :hover{
+    opacity: 0.7;
+    text-decoration: underline;
+}
+header p{
+    padding-bottom: 40px;
+    font-family: var(--font1);
+    color: rgba(255, 255, 255, 0.678);
+}
+section{
+    padding: 10vh 30px;
+    line-height: 2em;
+    font-family: var(--font3);
+    font-size: 3.5vw;
+}
+.normal{
+    background-color: white;
+    color: black;
+}
+.normal p {
+    padding-top: 2em;
+}
+.imagem{
+    background-color: rgba(0, 0, 0, 0.63);
+    color: white;
+    box-shadow: inset 1px 1px 0px rgba(0, 0, 0, 0.301);
+}
+.imagem p{
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.397);
+    text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.89);
+}
+#bgi1{
+    background: url(/imagens/background001.jpg) center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#bgi2{
+    background: url(/imagens/background002.jpg) center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
 }
