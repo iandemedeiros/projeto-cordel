@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "titulo";
+    src: url(../fonts/CartoonCheck-Black.ttf) format(truetype);
+}
+body{
+    margin: 0;
+}
+header{
+    background-color: black;
+    min-height: 150px;
+}
+header h1{
+    font-family: "titulo";
+    color: white;
+    margin: 0 10px;
+}
+header p{
+    color: rgba(255, 255, 255, 0.699);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.marcador{
+    text-decoration: none;
+    color: white;
+}
